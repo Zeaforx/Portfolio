@@ -20,7 +20,7 @@ export default function Headers() {
                     ></i>
                 </a>
             </div>
-            <h1 className="header"> Caleb </h1>
+            <h1 className="header"> Ajibade </h1>
         </header>
     );
 }
