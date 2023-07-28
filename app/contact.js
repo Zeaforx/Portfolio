@@ -45,7 +45,7 @@ export default function Contact() {
     }
 
     async function handleSubmit(event) {
-        // event.preventDefault();
+        event.preventDefault();
 
 
         await setDoc(doc(db, "contactFormData", form.name), {
