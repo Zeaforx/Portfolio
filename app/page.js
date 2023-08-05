@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import "./globals.css"
+// import "./globals.css"
 import Title from './title'
 import About from './about'
 import Services from './services'
