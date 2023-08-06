@@ -1,6 +1,6 @@
 export default function Title() {
     return (
-        <section className=" jumbotron-fluid title-section  d-flex justify-content-center align-items-center w-100 ">
+        <section className=" jumbotron jumbotron-fluid w-100 title-section  d-flex justify-content-center align-items-center w-100 ">
             <div className="container d-flex justify-content-center d-flex align-items-center flex-column ">
                 <div className="title-header">
                     <h1 className="title-header-text display-3 ">

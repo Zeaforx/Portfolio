@@ -5,11 +5,11 @@ export default function Services() {
 
 
     return (
-        <section className="services-section d-flex align-items-center justify-content-center">
-            <div className="services-content ">
+        <section className="services-section w-100 d-flex align-items-center justify-content-center flex-column">
+            
                 <h1 className="services-header">My services</h1>
-                <div className="services-container d-flex flex-row gap-3 card-deck ">
-                    <div className="card service d-flex align-items-center justify-content-center flex-column ">
+                <div className="services-container card-deck w-100 h-100 d-flex flex-row gap-3  ">
+                    <div className="card w-25 service d-flex align-items-center justify-content-center flex-column ">
                         <Image
                             className="service-image card-img-top mb-5"
                             src="/service/web_dev.jpg"
@@ -32,7 +32,7 @@ export default function Services() {
                             </button>
                         </a>
                     </div>
-                    <div className="card service d-flex align-items-center justify-content-center flex-column ">
+                    <div className="card w-25 service d-flex align-items-center justify-content-center flex-column ">
                         <Image
                             className="service-image card-img-top mb-5"
                             src="/service/ecommerce.jpg"
@@ -55,7 +55,7 @@ export default function Services() {
                             </button>
                         </a>
                     </div>
-                    <div className="card service d-flex align-items-center justify-content-center flex-column ">
+                    <div className="card w-25 service d-flex align-items-center justify-content-center flex-column ">
                         <Image
                             className="service-image card-img-top mb-5"
                             src="/service/Web_maintenance.jpg"
@@ -79,7 +79,7 @@ export default function Services() {
                         </a>
                     </div>
                 </div>
-            </div>
+            
         </section>
     );
 }

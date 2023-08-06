@@ -61,7 +61,7 @@ export default function Contact() {
 
     return (
         <section
-            className="contact-section d-flex align-items-center justify-content-center"
+            className="contact-section w-100 d-flex align-items-center justify-content-center"
             id="contact"
         >
             <div className=" card-deck h-100 w-100 d-flex align-items-center justify-content-center  contact-container">

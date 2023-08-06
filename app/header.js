@@ -4,7 +4,7 @@
 
 export default function Headers() {
     return (
-        <nav className="navbar navbar-expand navbar-dark navbar-custom w-100">
+        <nav className="navbar w-100 navbar-expand navbar-dark navbar-custom w-100">
             <div className="container-fluid">
                 <div className="navbar-header  ">
                     <h1 className=" display-5 navbar-brand "> Ajibade </h1>

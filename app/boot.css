@@ -75,17 +75,21 @@ a {
 .services-section {
     background-color: #138679;
     height: 850px;
+    min-width: 400px;
 }
 
 .service{
-    width: 384px;
+
     background-color: #138679;
     border-color: #138679;
 }
 
+.service-image{
+    border-radius: 30px;
+}
+
 .service-button{
-        height: 53px;
-            width: 137px;
+
             background-color: #fec103;
             border-color: #fec103;
             border-radius: 10px;

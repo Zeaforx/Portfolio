@@ -1,6 +1,6 @@
 export default function Quote() {
     return (
-        <section className="quote-section">
+        <section className="quote-section w-100">
             <div className="quote-scroll-container ml-5  ">
                 <div className="quote-container card mt-5 ">
                     <blockquote className="">
@@ -37,7 +37,7 @@ export default function Quote() {
                         <cite> -Emma</cite>
                     </blockquote>
                 </div>
-                <div className="spacer" ></div>
+                <div className="spacer"></div>
                 <div className="space"></div>
             </div>
         </section>
