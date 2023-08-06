@@ -1,7 +1,10 @@
-import './globals.css'
+// import './globals.css'
 import { Inter } from 'next/font/google'
 import Headers from "./header";
 import Head from 'next/head';
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 
 

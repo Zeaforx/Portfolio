@@ -1,5 +1,5 @@
 import Image from 'next/image'
-// import "./globals.css"
+import "./boot.css"
 import Title from './title'
 import About from './about'
 import Services from './services'
@@ -18,7 +18,7 @@ export default function Home() {
       <Contact/>
       <Footer/>
       
-      <p>weather</p>
+      {/* <p>weather</p> */}
     </main>
   )
 }

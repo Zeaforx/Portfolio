@@ -60,27 +60,24 @@ export default function Contact() {
 
 
     return (
-        <section className="contact-section" id="contact" >
-            <div className="contact-container">
-                <div className="contact-text">
-                    <h3>Contact us Today</h3>
+        <section
+            className="contact-section d-flex align-items-center justify-content-center"
+            id="contact"
+        >
+            <div className=" card-deck h-100 w-100 d-flex align-items-center justify-content-center  contact-container">
+                <div className=" card h-100 w-25  contact-text d-flex align-items-center justify-content-center  ">
+                    <h3 className="h1 pl-5">Contact us Today</h3>
 
-                    <p>
+                    <p className="fs-4 pl-5">
                         Fill in the form below to contact me. I am here to
                         answer how many questions you have and provide you with
                         top-notch web development services.
                     </p>
                 </div>
-                <div className="contact-form">
+                <div className=" card w-75 h-100  contact-form d-flex align-items-center justify-content-center">
                     <form onSubmit={handleSubmit}>
-                        <div className="row">
-                            <div className="form-group">
-                                <input
-                                    name="name"
-                                    value={form.name}
-                                    onChange={handleChange}
-                                    id="name"
-                                />
+                        <div className="row mb-3">
+                            <div className="col form-group">
                                 <label htmlFor="name">
                                     <i
                                         className="fa fa-user"
@@ -90,34 +87,45 @@ export default function Contact() {
                                     </i>{" "}
                                     Name
                                 </label>
-                            </div>
-                            <div className="form-group">
                                 <input
+                                    className="form-control  name"
+                                    name="name"
+                                    value={form.name}
+                                    onChange={handleChange}
+                                    id="name"
+                                    required
+                                />
+                            </div>
+                            <div className="col form-group">
+                                <label htmlFor="email">
+                                    <i class="fa-regular fa-envelope"></i> Email
+                                </label>
+                                <input
+                                    className="form-control email"
                                     type="email"
                                     name="email"
                                     value={form.email}
                                     onChange={handleChange}
                                     id="email"
+                                    required
                                 />
-                                <label htmlFor="email">
-                                    <i class="fa-regular fa-envelope"></i> Email
-                                </label>
                             </div>
                         </div>
+
                         {/* <div className="form-group">
                             <label htmlFor="number">number</label>
                             <input id="number" />
                         </div> */}
 
-                        <div className="form-group">
+                        <div className="form-group mb-3 ">
                             <select
+                                className="form-control inquiry"
                                 value={form.inquiry}
                                 onChange={handleChange}
                                 name="inquiry"
+                                required
                             >
-                                <option>
-                                     please select an inquiry
-                                </option>
+                                <option>please select an inquiry</option>
 
                                 <option value="web-development">
                                     Website Development
@@ -130,19 +138,25 @@ export default function Contact() {
                             </select>
                         </div>
 
-                        <div className="form-group">
+                        <div className="form-group mb-3">
+                            <label htmlFor="message">
+                                <i className="fa-solid fa-comment"></i>Message
+                            </label>
                             <textarea
+                                className="form-control message"
                                 name="message"
                                 value={form.message}
                                 id="message"
                                 rows="8"
                                 onChange={handleChange}
                             ></textarea>
-                            <label htmlFor="message">
-                                <i class="fa-solid fa-comment"></i> Message
-                            </label>
                         </div>
-                        <button type="submit">submit</button>
+                        <button
+                            className=" w-100 form-button btn btn-warning btn-lg btn-block"
+                            type="submit"
+                        >
+                            submit
+                        </button>
                     </form>
                     {/* <pre>{JSON.stringify(form.inquiry)}</pre> */}
                 </div>
