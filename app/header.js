@@ -46,7 +46,7 @@ export default function Headers() {
                         </a>
                     </li>
                     <li>
-                        <a href="https://google.com">
+                        <a href="https://linkedin.com/in/caleb-ajibade-774278287">
                             <i className="bi bi-linkedin h3"></i>
                         </a>
                     </li>

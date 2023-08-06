@@ -7,7 +7,7 @@ export default function Services() {
     return (
         <section className="services-section w-100 d-flex align-items-center justify-content-center flex-column">
             <h1 className="services-header">My services</h1>
-            <div className="services-container card-deck w-100 h-100 d-flex align-items-center justify-content-center  flex-row gap-3  ">
+            <div className="services-container card-deck w-100 h-100 d-flex align-items-center justify-content-center  flex-row gap-5  ">
                 <div className="card w-25 service d-flex align-items-center justify-content-center flex-column ">
                     <Image
                         className="service-image card-img-top mb-5"
