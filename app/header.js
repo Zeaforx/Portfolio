@@ -1,56 +1,60 @@
-
-
-
-
+'use client'
+import { useState } from "react";
+import { Button, Collapse } from "react-bootstrap";
 export default function Headers() {
+    const [open, setOpen] = useState(false)
     return (
-        <nav className="navbar w-100 navbar-expand navbar-dark navbar-custom w-100">
-            <div className="container-fluid">
-                <div className="navbar-header  ">
-                    <h1 className=" display-5 navbar-brand "> Ajibade </h1>
-                </div>
+        <nav className="navbar win w-100 navbar-expand-sm navbar-dark navbar-custom w-100">
+            <div className="container">
+                <h1 className="navbar-brand "> FOllow my socials </h1>
 
-                {/* <div className="socials">
-                    <a href="https://twitter.com/kaexponent2">
-                        <i
-                            className="fa fa-twitter-square fa-2x"
-                            aria-hidden="false"
-                        ></i>
-                    </a>
-
-                    <a href="https://instagram.com/kaexponent_2">
-                        <i
-                            className="fa fa-instagram fa-2x"
-                            aria-hidden="true"
-                        ></i>
-                    </a>
-                    <a>
-                        <i
-                            className="fa fa-linkedin-square fa-2x"
-                            aria-hidden="true"
-                        ></i>
-                    </a>
-                </div>
-
-                 */}
-
-                <ul className="nav navbar-nav navbar-right gap-3 ">
-                    <li>
-                        <a href="https://twitter.com/kaexponent2">
-                            <span className="bi bi-twitter h3 "></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/kaexponent_2">
-                            <span className="bi bi-instagram h3 "></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/in/caleb-ajibade-774278287">
-                            <i className="bi bi-linkedin h3"></i>
-                        </a>
-                    </li>
-                </ul>
+                {/* <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#nav"
+                > 
+                    
+                </button> */}
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    onClick={() => setOpen(!open)}
+                    aria-controls="#nav"
+                    aria-expanded={open}
+                >
+                    <span className="navbar-toggler-icon"></span>{" "}
+                </button>
+                <Collapse in={open}>
+                    <div className="collapse navbar-collapse " id="nav">
+                        <ul className=" navbar-nav ms-auto d-sm-inline ">
+                            <li className="nav-item">
+                                <a
+                                    className="nav-link"
+                                    href="https://twitter.com/kaexponent2"
+                                >
+                                    <span className="bi bi-twitter h3 "></span>
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className="nav-link"
+                                    href="https://instagram.com/kaexponent_2"
+                                >
+                                    <span className="bi bi-instagram h3 "></span>
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className="nav-link"
+                                    href="https://linkedin.com/in/caleb-ajibade-774278287"
+                                >
+                                    <i className="bi bi-linkedin h3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </Collapse>
             </div>
         </nav>
     );

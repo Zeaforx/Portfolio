@@ -5,11 +5,40 @@
 
 }
 
+body{
+    display: block;
+    content: "";
+    height: 60px;
+}
 
 a {
     color: inherit;
 }
 
+.win{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+nav > button{
+    background-color: #00796B;
+}
+
+.unorder{
+    width: 100%;
+    list-style-type: none;
+}
+
+.list{
+    float: left;
+}
+
+.socials{
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    width: 100%;
+}
 
 .navbar-custom {
     background-color: #00796B;
@@ -51,11 +80,11 @@ a {
     color: white;
     /* width: 100%; */
     /* overflow-y: scroll; */
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 
 }
 .about-description {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     /* width: min-content; */
     background-color: #333333;
     color: white;
@@ -74,8 +103,7 @@ a {
 
 .services-section {
     background-color: #138679;
-    height: 850px;
-    min-width: 400px;
+
 }
 
 .service{
@@ -97,13 +125,16 @@ a {
 }
 
 .quote-section {
-    height: 250px;
+    height: 500px;
     background-color: #ffc107;
-    color: black;
+    /* color: black; */
+}
+.f{
+    visibility: hidden;
 }
 
 
-.quote-scroll-container{
+/* .quote-scroll-container{
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
     white-space: nowrap;
@@ -118,26 +149,29 @@ a {
     height: 100%;
     border-color: #ffc107;
     
-}
+} */
 
 .spacer{
     margin-top: 43px;
 }
 
 .contact-section {
-    height: 431px;
+    /* height: 4310px; */
     width: 100%;
     background-color: #148d7f;}
 
 .contact-text{
     background-color: #148d7f;
     color: white;
-    overflow-y: scroll;
+    border-color: #148d7f;
+    /* overflow-y: scroll; */
+    
 }
 
 .contact-form{
     background-color: #148d7f;
     color: white;
+    border-color: #148d7f;
 }
 
 .contact-container{

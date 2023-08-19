@@ -61,11 +61,11 @@ export default function Contact() {
 
     return (
         <section
-            className="contact-section w-100 d-flex align-items-center justify-content-center"
+            className="contact-section container-fluid  w-100 "
             id="contact"
         >
-            <div className=" card-deck h-100 w-100 d-flex align-items-center justify-content-center  contact-container">
-                <div className=" card h-100 w-25  contact-text d-flex align-items-center justify-content-center  ">
+            <div className=" row     contact-container row-md  ">
+                <div className=" card  col-md   contact-text   ">
                     <h3 className="h1 pl-5">Contact us Today</h3>
 
                     <p className="fs-4 pl-5">
@@ -74,7 +74,7 @@ export default function Contact() {
                         top-notch web development services.
                     </p>
                 </div>
-                <div className=" card w-75 h-100  contact-form d-flex align-items-center justify-content-center">
+                <div className=" card col-md  contact-form mb-5 ">
                     <form onSubmit={handleSubmit}>
                         <div className="row mb-3">
                             <div className="col form-group">
@@ -98,7 +98,8 @@ export default function Contact() {
                             </div>
                             <div className="col form-group">
                                 <label htmlFor="email">
-                                    <i class="fa-regular fa-envelope"></i> Email
+                                    <i className="fa-regular fa-envelope"></i>{" "}
+                                    Email
                                 </label>
                                 <input
                                     className="form-control email"
