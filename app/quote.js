@@ -4,7 +4,6 @@ import { Carousel, CarouselItem } from "react-bootstrap";
 import { CarouselCaption } from "react-bootstrap";
 import Image from "next/image";
 
-
 export default function Quote() {
     return (
         <section className="quote-section  container-fluid w-100">
@@ -81,8 +80,8 @@ export default function Quote() {
                         <CarouselCaption>
                             <p className=" lead ">
                                 You know you have achieved perfection not when
-                                there's nothing left to add 
-                                but when there's nothing left to take away
+                                there's nothing left to but when there's nothing
+                                left to take away
                             </p>
                             <cite> -Emma</cite>
                         </CarouselCaption>

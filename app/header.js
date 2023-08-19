@@ -6,7 +6,7 @@ export default function Headers() {
     return (
         <nav className="navbar win w-100 navbar-expand-sm navbar-dark navbar-custom w-100">
             <div className="container">
-                <h1 className="navbar-brand "> FOllow my socials </h1>
+                <h1 className="navbar-brand "> Follow my socials </h1>
 
                 {/* <button
                     className="navbar-toggler"
@@ -27,7 +27,7 @@ export default function Headers() {
                 </button>
                 <Collapse in={open}>
                     <div className="collapse navbar-collapse " id="nav">
-                        <ul className=" navbar-nav ms-auto d-sm-inline ">
+                        <ul className=" navbar-nav ms-auto  ">
                             <li className="nav-item">
                                 <a
                                     className="nav-link"

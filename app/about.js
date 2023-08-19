@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
     return (
         <section className="w-100 container-fluid d-sm-flex align-items-center justify-content-center about-section w-100">
-            <div className="about-container w-100 h-100 card-deck d-sm-flex align-items-center justify-content-center flex-row-reverse    gap-3">
+            <div className="about-container   w-100  card-deck d-sm-flex align-items-center justify-content-center flex-row-reverse    gap-3">
                 <div className=" card w-50 about-img-container ">
                     <Image
                         className="d-none d-sm-block img-fluid about-image "
@@ -12,7 +12,7 @@ export default function About() {
                         width={574}
                     />
                 </div>
-                <div className=" card h-100 w-sm-100  container about-description">
+                <div className=" card  w-sm-100  container about-description">
                     <div className="card-body text-nowraps ">
                         <h3 className=" card-title about-description-header">
                             About
